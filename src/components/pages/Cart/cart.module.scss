@@ -1,0 +1,65 @@
+@import "../../../styles/variables.scss";
+
+.cart__container {
+  padding-top: 40px;
+}
+
+.cart__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.order__form {
+  background-color: $color-light-gray;
+  width: 548px;
+  padding: 32px;
+  border-radius: $radius-small;
+
+  b {
+    display: block;
+    font-size: $size-large;
+    font-weight: $weight-bold;
+    color: $color-black;
+    margin-bottom: 24px;
+    line-height: 44px;
+  }
+
+  p {
+    color: $color-text-gray;
+    font-size: $size-large;
+    line-height: 52px;
+    font-weight: $weight-medium;
+  }
+
+  span {
+    font-weight: $weight-bold;
+    font-size: $size-title;
+    color: $color-black;
+    line-height: 70.4px;
+  }
+}
+
+.order__items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+}
+
+.total__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.empty__container {
+  p {
+    font-size: $size-standart;
+    color: $color-black;
+    line-height: 26px;
+    font-weight: $weight-medium;
+    margin-bottom: 32px;
+  }
+}

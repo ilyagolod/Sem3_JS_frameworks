@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.discount__container {
+  background: linear-gradient(261deg, $color-dark-base 0%, $color-base 100%);
+  border-radius: $radius-medium;
+  padding: 32px;
+}
+
+.title {
+  color: white;
+  font-size: $size-title;
+  font-weight: $weight-bold;
+  line-height: 70.4px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.discount__content {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+
+  img {
+    height: 360px;
+    width: 748px;
+    transform: translateY(32px);
+    object-fit: cover;
+  }
+
+  form {
+    flex: 1;
+  }
+}

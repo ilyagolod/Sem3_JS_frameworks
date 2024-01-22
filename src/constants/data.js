@@ -1,0 +1,1 @@
+export const DISCOUNT_INPUTS = [{placeholder: 'Name', name: 'name'}, {placeholder: 'Phone number', name: 'phoneNumber'}, {placeholder: 'Email', name: 'email'}];

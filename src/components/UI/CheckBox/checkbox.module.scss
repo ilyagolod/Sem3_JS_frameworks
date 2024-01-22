@@ -1,0 +1,66 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+  padding-right: 36px + 16px;
+  // margin-bottom: 12px;
+  cursor: pointer;
+  font-size: $size-standart;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 12;
+  right: 0;
+  height: 36px;
+  width: 36px;
+  background-color: $color-white;
+  border-radius: $radius-small;
+  border: 1px solid $color-gray;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: $color-gray;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: $color-base;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 12px;
+  top: 6px;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  border-radius: 2px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

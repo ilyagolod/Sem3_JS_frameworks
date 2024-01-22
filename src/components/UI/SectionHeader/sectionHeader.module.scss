@@ -1,0 +1,44 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  span {
+    display: block;
+    align-self: stretch;
+    width: 100%;
+    height: 1px;
+    flex: 1;
+    align-self: center;
+    background-color: $color-gray;
+  }
+}
+
+.title {
+  color: $color-black;
+  font-size: $size-title;
+  font-weight: $weight-bold;
+  line-height: 70.4px;
+  word-wrap: break-word;
+  margin-right: 32px;
+}
+
+.btn {
+  color: #8b8b8b;
+  font-size: $size-medium;
+  font-weight: $weight-medium;
+  line-height: 20.16px;
+  word-wrap: break-word;
+  background-color: transparent;
+  border: 1px solid $color-gray;
+  padding: 8px 16px;
+  border-radius: $radius-small;
+  cursor: pointer;
+  transition: color $transition-fast;
+
+  &:active {
+    color: $color-black;
+  }
+}

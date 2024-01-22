@@ -1,0 +1,40 @@
+@import "../../../styles/variables.scss";
+
+.counter__container {
+  position: relative;
+  display: flex;
+  min-width: 200px;
+  justify-content: space-between;
+
+  div {
+    width: 96px;
+    min-height: 100%;
+    border: 1px solid $color-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $size-standart;
+    color: $color-black;
+    font-weight: $weight-semibold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  button {
+    background-color: $color-white;
+    border: 1px solid $color-gray;
+    height: 58px;
+    width: 58px;
+    border-radius: $radius-small;
+    font-size: $size-large;
+    color: $color-text-gray;
+    z-index: 2;
+    cursor: pointer;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+}

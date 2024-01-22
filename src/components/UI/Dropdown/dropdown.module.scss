@@ -1,0 +1,54 @@
+@import "../../../styles/variables.scss";
+
+.dropdown {
+  width: 200px;
+  background: transparent;
+  border-radius: $radius-small;
+  border: 1px solid $color-gray;
+  position: relative;
+}
+
+.active__container {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-weight: $weight-medium;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rotate__arrow {
+  transform: scaleY(-1);
+}
+
+.values__list {
+  position: absolute;
+  top: calc(100% + 1px);
+  background-color: $color-white;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  padding: 16px;
+  border-radius: $radius-small;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  p {
+    color: $color-text-gray;
+    font-size: $size-medium;
+    line-height: 20.16px;
+    font-weight: $weight-medium;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+}
+
+.active__value {
+  color: $color-black !important;
+}

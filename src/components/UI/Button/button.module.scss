@@ -1,0 +1,26 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  // height: 58px;
+  background-color: $color-base;
+  border: none;
+  border-radius: $radius-small;
+  font-weight: $weight-semibold;
+  color: $color-white;
+  font-size: $size-standart;
+  cursor: pointer;
+  transition: background $transition-fast;
+  line-height: 26px;
+  padding: 16px 56px;
+
+  &:hover {
+    background-color: $color-black;
+  }
+}
+
+.added__to_cart {
+  border: 1px solid $color-black;
+  background-color: $color-white;
+  color: $color-black;
+  pointer-events: none;
+}

@@ -1,0 +1,1 @@
+export const getPercent = (item) => Math.ceil(100 - (item.discont_price * 100) / item.price);

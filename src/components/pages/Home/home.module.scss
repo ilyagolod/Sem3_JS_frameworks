@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.head {
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../../assets/images/head.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.title {
+  font-size: $size-big-title;
+  line-height: 105.6px;
+  font-weight: $weight-bold;
+  word-wrap: break-word;
+  color: $color-white;
+  margin-bottom: 40px;
+}

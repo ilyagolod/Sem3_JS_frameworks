@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+
+.card__container {
+  flex: 1;
+  max-height: 180px;
+  border: 1px solid $color-gray;
+  border-radius: $radius-medium;
+  overflow: hidden;
+  display: flex;
+
+  img {
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    border-right: 1px solid $color-gray;
+  }
+}
+
+.card__content {
+  padding: 32px;
+  flex: 1;
+
+  p {
+    font-weight: $weight-medium;
+    color: $color-black;
+    font-size: $size-standart;
+    text-overflow: ellipsis;
+    max-width: 450px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.content__top {
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    cursor: pointer;
+    transition: $transition-fast;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.content__bottom {
+  display: flex;
+  margin-top: 32px;
+  align-items: center;
+
+  span {
+    display: block;
+    margin-left: 32px;
+    font-size: $size-large;
+    font-weight: $weight-semibold;
+    color: $color-black;
+    line-height: 44px;
+  }
+
+  p {
+    margin-left: 16px;
+    text-decoration: line-through;
+    color: $color-text-gray;
+    font-size: $size-standart;
+    line-height: 26px;
+    font-weight: $weight-medium;
+  }
+}
+
+.bottom__price {
+  display: flex;
+  align-items: flex-end;
+}

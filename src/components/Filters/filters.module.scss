@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.filters__container {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+
+  p {
+    font-size: $size-standart;
+    font-weight: $weight-semibold;
+    color: $color-black;
+    line-height: 26px;
+  }
+}
+
+.filter__option {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.price__container {
+  input {
+    padding: 8px 16px;
+    width: 112px;
+    font-size: $size-medium;
+    line-height: 20.16px;
+  }
+}

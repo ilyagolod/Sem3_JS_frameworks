@@ -1,0 +1,30 @@
+@import "../../../styles/variables.scss";
+
+.card {
+  width: 100%;
+  padding: 32px;
+  background-color: $color-light-gray;
+  border-radius: $radius-small;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    display: block;
+    font-size: $size-standart;
+    color: $color-text-gray;
+    line-height: 26px;
+    font-weight: $weight-medium;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: $size-large;
+    font-weight: $weight-semibold;
+    line-height: 44px;
+  }
+
+  div {
+    display: flex;
+    gap: 16px;
+  }
+}

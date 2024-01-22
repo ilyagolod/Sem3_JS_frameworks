@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.header {
+  height: 128px;
+  border-bottom: 1px solid $color-gray;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.navigation {
+  ul {
+    display: inline-flex;
+    gap: 32px;
+  }
+
+  a {
+    color: $color-black;
+    transition: color $transition-fast;
+    font-size: $size-standart;
+
+    &:hover {
+      color: $color-base;
+    }
+  }
+}

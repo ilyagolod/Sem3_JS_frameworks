@@ -1,0 +1,24 @@
+@import "../../../styles/variables.scss";
+
+.basket {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 26px;
+    border-radius: $radius-circle;
+    color: $color-white;
+    font-size: $size-small;
+    background-color: $color-base;
+    font-weight: $weight-semibold;
+    position: absolute;
+    top: 7px;
+    left: 0;
+  }
+}

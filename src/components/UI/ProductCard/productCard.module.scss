@@ -1,0 +1,73 @@
+@import "../../../styles/variables.scss";
+
+.card {
+  position: relative;
+  width: 100%;
+  border: 1px solid $color-gray;
+  flex: 1 0 auto;
+  min-width: 0px;
+  cursor: pointer;
+  border-radius: $radius-medium;
+  overflow: hidden;
+
+  img {
+    height: 284px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  button {
+    position: absolute !important;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    z-index: 5;
+  }
+}
+
+.image__container {
+  position: relative;
+}
+
+.card__info {
+  padding: 20px 32px 32px 32px;
+  max-width: calc((1360px - (32px * 3)) / 4);
+
+  p {
+    overflow: hidden;
+    min-width: 0px;
+    text-overflow: ellipsis;
+    font-size: $size-standart;
+    color: $color-black;
+    font-weight: $weight-medium;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+}
+
+.prices__row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  margin-top: 16px;
+
+  h2 {
+    color: $color-black;
+    font-weight: $weight-semibold;
+    font-size: $size-large;
+    line-height: 44px;
+  }
+
+  span {
+    text-decoration: line-through;
+    color: $color-text-gray;
+    line-height: 26px;
+  }
+}
+
+.sale__label {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}

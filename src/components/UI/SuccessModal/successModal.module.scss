@@ -1,0 +1,59 @@
+@import "../../../styles/variables.scss";
+
+.modal__container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($color-black, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 260px;
+  justify-content: center;
+
+  article {
+    position: relative;
+    padding: 32px;
+    color: $color-white;
+    width: 548px;
+    background-color: $color-base;
+    border-radius: $radius-medium;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    svg {
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      transition: $transition-fast;
+      margin-top: 5px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      path {
+        stroke: $color-white;
+      }
+    }
+
+    span {
+      font-size: $size-large;
+      line-height: 44px;
+      font-weight: $weight-semibold;
+    }
+
+    p {
+      font-size: $size-standart;
+      font-weight: $weight-semibold;
+      white-space: pre-line;
+    }
+  }
+}

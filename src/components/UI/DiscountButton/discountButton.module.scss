@@ -1,0 +1,25 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  padding: 16px 32px;
+  width: 100%;
+  background: $color-white;
+  border-radius: $radius-small;
+  border: none;
+  font-size: $size-standart;
+  line-height: 26px;
+  font-weight: $weight-semibold;
+  transition: color $transition-fast, background $transition-fast;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-black;
+  }
+}
+
+.active {
+  background-color: $color-light-gray;
+  color: $color-base;
+  pointer-events: none;
+}

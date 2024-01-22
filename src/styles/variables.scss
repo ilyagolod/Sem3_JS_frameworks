@@ -1,0 +1,30 @@
+$color-base: #339933;
+$color-dark-base: #0b710b;
+$color-black: #282828;
+$color-white: #ffffff;
+$color-gray: #dddddd;
+$color-text-gray: #8b8b8b;
+$color-light-gray: #f1f3f4;
+
+$radius-small: 6px;
+$radius-medium: 12px;
+$radius-circle: 50%;
+
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extrabold: 800;
+
+$size-standart: 20px;
+$size-large: 40px;
+$size-small: 12px;
+$size-medium: 16px;
+$size-title: 64px;
+$size-big-title: 96px;
+
+$transition-fast: 0.3s;
+
+$wrapper-width: 1360px;
+
+$card_basis: calc(($wrapper-width - (32px * 3)) / 4);
